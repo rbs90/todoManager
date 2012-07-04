@@ -50,7 +50,7 @@ input {
 	line-height: 50px;
 	text-indent: 20px;
 	
-	border-bottom: 2px;
+	border-bottom: solid 2px #212121;
 	border-color: #212121;
 	
 	-webkit-border-top-left-radius: 25px;
@@ -121,7 +121,12 @@ input {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 30px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.2em;
+	font-weight: bold;
+	font-family: 'Black Ops One', cursive;
+	text-align: center;
 	
 	background-image: linear-gradient(bottom, rgb(4,66,29) 8%, rgb(66,128,35) 58%);
 	background-image: -o-linear-gradient(bottom, rgb(4,66,29) 8%, rgb(66,128,35) 58%);
@@ -136,4 +141,13 @@ input {
 		color-stop(0.08, rgb(4,66,29)),
 		color-stop(0.58, rgb(66,128,35))
 	);
+	
+	-webkit-border-bottom-right-radius: 25px;
+	-webkit-border-bottom-left-radius: 25px;
+	-moz-border-radius-bottomright: 25px;
+	-moz-border-radius-bottomleft: 25px;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	
+	border-top: solid 2px #212121;
 }
