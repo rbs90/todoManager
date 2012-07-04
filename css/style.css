@@ -1,0 +1,123 @@
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
+@import url(http://fonts.googleapis.com/css?family=Black+Ops+One);
+
+* {
+	
+}
+
+body {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: white;
+	
+	background-image: linear-gradient(left top, rgb(0,0,0) 0%, rgb(39,24,69) 76%);
+	background-image: -o-linear-gradient(left top, rgb(0,0,0) 0%, rgb(39,24,69) 76%);
+	background-image: -moz-linear-gradient(left top, rgb(0,0,0) 0%, rgb(39,24,69) 76%);
+	background-image: -webkit-linear-gradient(left top, rgb(0,0,0) 0%, rgb(39,24,69) 76%);
+	background-image: -ms-linear-gradient(left top, rgb(0,0,0) 0%, rgb(39,24,69) 76%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right bottom,
+		color-stop(0, rgb(0,0,0)),
+		color-stop(0.76, rgb(39,24,69))
+	);	
+}
+
+#left {
+	position: fixed;
+	top: 100px;
+	left: 0;
+	bottom: 0;
+	width: 50px;
+	padding: 4px;
+}
+
+#top {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+}
+
+#content {
+	top: 80px;
+	left: 50px;
+	right: 0px;
+	bottom: 0px;
+	position: fixed;
+	
+	-moz-border-radius-topleft: 25px;
+	-webkit-border-top-left-radius: 25px;
+	border-top-left-radius: 25px;
+	
+	background-image: url(../img/back.png);
+	
+	-webkit-box-shadow: -2px -2px 10px #7e6904;	/* webkit browser*/ 
+	-moz-box-shadow: -2px -2px 10px #7e6904;	/* firefox */ 
+	box-shadow: -2px -2px 10px #7e6904;
+	
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.menuitem {
+	margin-left: 0;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-right-radius: 10px;
+	border-top-right-radius: 10px;
+	-moz-border-radius-downright: 10px;
+	-webkit-border-down-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.menuitem img{
+	display: table-cell;
+	margin: auto;
+}
+
+.menuitem.menuhover {
+	background-image: linear-gradient(left , rgb(0,0,0) 0%, rgb(7,92,37) 100%);
+	background-image: -o-linear-gradient(left , rgb(0,0,0) 0%, rgb(7,92,37) 100%);
+	background-image: -moz-linear-gradient(left , rgb(0,0,0) 0%, rgb(7,92,37) 100%);
+	background-image: -webkit-linear-gradient(left , rgb(0,0,0) 0%, rgb(7,92,37) 100%);
+	background-image: -ms-linear-gradient(left , rgb(0,0,0) 0%, rgb(7,92,37) 100%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0, rgb(0,0,0)),
+		color-stop(1, rgb(7,92,37))
+	);
+}
+
+#maintask {
+	position: absolute;
+	top:0;
+	left: 60px;
+	right: 0;
+	height: 75px;
+}
+
+#maintask div{
+	float: left;
+	overflow: hidden;
+}
+
+#name {
+	line-height: 75px;
+	font-size: 3em;
+	color: white;
+	font-family: 'Black Ops One', cursive;
+	margin-right: 20px;
+}
+
+#progress {
+	width: 30%;
+	margin-top: 8px;
+}

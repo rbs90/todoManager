@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css"></link>
+		<link rel="stylesheet" href="css/tasks.css"></link>
+		<link rel="stylesheet" href="css/progressBars.css"></link>
+		<link rel="stylesheet" href="css/jquery.countdown.css"></link>
+		<link rel="stylesheet" href="css/form.css"></link>
+		<link rel="stylesheet" href="css/jquery/jquery-ui-1.8.21.custom.css"></link>
+		<link rel="stylesheet" href="css/jquery.ui.timepicker.css"></link>
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+		<script type="text/javascript" src="js/ajax.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="js/countdown/jquery.countdown.js"></script>
+		<script type="text/javascript" src="js/countdown/jquery.countdown-de.js"></script>
+		<script type="text/javascript" src="js/bpopup-0.7.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.timepicker.js"></script>
+		
+	</head>
+	<body>
+		<div id="left">
+			<div class="menuitem" id="add" >
+				<img src="img/menu/add.png"></img>	
+			</div>
+			<div class="menuitem" id="countdown" >
+				<img src="img/menu/clock.png"></img>	
+			</div>
+			<div class="menuitem" id="countdown">
+				<img src="img/menu/toggle.png"></img>	
+			</div>
+			<div class="menuitem" id="reload">
+				<img src="img/menu/reload.png"></img>	
+			</div>
+			<div class="menuitem" id="back" style="display: none;">
+				<img src="img/menu/back.png"></img>	
+			</div>
+			
+		</div>
+		<div id="top">
+			<div id="maintask">
+				<div id="name">
+					Aktuelle Aufgaben
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div class="header">
+			<table>
+				<tr>
+					<td class="taskid">#</td>
+					<td class="taskname">Name</td>
+					<td class="taskcat">Kategorie</td>
+					<td class="taskprogress">Fortschritt</td>
+					<td class="countdownheader">verbleibend</td>
+					<td class="taskdeadline">Ende</td>
+				</tr>
+			</table>
+			</div>
+		</div>
+		<div id="addPopup">
+			<div class="popupHeader">
+				Aufgabe hinzuf&uuml;gen
+				<div class="close"><img src="img/button_cancel.png"></div>
+			</div>
+			<form>
+				 <label>Bezeichnung:</label>
+  				 <input type="text" id="full_name" name="full_name" required>
+  				 <label>Deadline:</label>
+  				 <div id="deadline" name="deadline"></div>
+  				 <label>Zeit:</label>
+  				 <input type="time" id="time" name="deadlineTime" value="00:00">
+			</form>
+			<div id="submit" onclick="addTask()">Hinzuf&uuml;gen</div> 
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,157 @@
+.task {
+	
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border: 1px solid #000000;
+	margin: 2px;
+	color: #EEE;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	
+	-webkit-box-shadow: 0px 1px 1px #FFA500; 
+	-moz-box-shadow: 0px 1px 1px #FFA500; 
+	box-shadow: 0px 1px 1px #FFA500;
+	
+}
+
+.header {
+	
+	-webkit-border-bottom-left-radius: 12px;
+	-webkit-border-bottom-right-radius: 12px;
+	-moz-border-radius-bottomright: 12px;
+	-moz-border-radius-bottomleft: 12px;
+	border: 1px solid #000000;
+	margin: 2px;
+	color: #EEE;
+	width: 90%;
+	margin: auto;
+	
+	-webkit-box-shadow: 0px 1px 1px #FFA500; 
+	-moz-box-shadow: 0px 1px 1px #FFA500; 
+	box-shadow: 0px 1px 1px #FFA500;
+}
+
+.task td {
+	color: #EEE;
+	padding: 4px;
+	font-size: 1.2em;
+}
+
+
+.header td {
+	background-image: linear-gradient(bottom, rgb(22,39,64) 24%, rgb(4,23,23) 67%);
+	background-image: -o-linear-gradient(bottom, rgb(22,39,64) 24%, rgb(4,23,23) 67%);
+	background-image: -moz-linear-gradient(bottom, rgb(22,39,64) 24%, rgb(4,23,23) 67%);
+	background-image: -webkit-linear-gradient(bottom, rgb(22,39,64) 24%, rgb(4,23,23) 67%);
+	background-image: -ms-linear-gradient(bottom, rgb(22,39,64) 24%, rgb(4,23,23) 67%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.24, rgb(22,39,64)),
+		color-stop(0.67, rgb(4,23,23))
+	);
+	
+	color: #EEE;
+	padding: 4px;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+
+.normal {
+	background-image: linear-gradient(left , rgb(58,61,54) 24%, rgb(3,41,41) 79%);
+	background-image: -o-linear-gradient(left , rgb(58,61,54) 24%, rgb(3,41,41) 79%);
+	background-image: -moz-linear-gradient(left , rgb(58,61,54) 24%, rgb(3,41,41) 79%);
+	background-image: -webkit-linear-gradient(left , rgb(58,61,54) 24%, rgb(3,41,41) 79%);
+	background-image: -ms-linear-gradient(left , rgb(58,61,54) 24%, rgb(3,41,41) 79%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0.24, rgb(58,61,54)),
+		color-stop(0.79, rgb(3,41,41))
+	);
+	
+}
+
+.overdue {
+	background-image: linear-gradient(right bottom, #630A0A 43%, #6E3E15 72%);
+	background-image: -o-linear-gradient(right bottom, #630A0A 43%, #6E3E15 72%);
+	background-image: -moz-linear-gradient(right bottom, #630A0A 43%, #6E3E15 72%);
+	background-image: -webkit-linear-gradient(right bottom, #630A0A 43%, #6E3E15 72%);
+	background-image: -ms-linear-gradient(right bottom, #630A0A 43%, #6E3E15 72%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		left top,
+		color-stop(0.43, #630A0A),
+		color-stop(0.72, #6E3E15)
+	);
+	
+}
+
+.finished {
+	background-image: linear-gradient(right , rgb(3,97,80) 0%, rgb(18,128,44) 87%);
+	background-image: -o-linear-gradient(right , rgb(3,97,80) 0%, rgb(18,128,44) 87%);
+	background-image: -moz-linear-gradient(right , rgb(3,97,80) 0%, rgb(18,128,44) 87%);
+	background-image: -webkit-linear-gradient(right , rgb(3,97,80) 0%, rgb(18,128,44) 87%);
+	background-image: -ms-linear-gradient(right , rgb(3,97,80) 0%, rgb(18,128,44) 87%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		left bottom,
+		color-stop(0, rgb(3,97,80)),
+		color-stop(0.87, rgb(18,128,44))
+	);
+}
+
+table {
+	width: 100%;
+}
+
+.taskid {
+	width: 10px;
+}
+
+.taskname {
+		
+}
+
+.taskdeadline {
+	width: 120px;
+	text-align: center;
+}
+
+.countdown {
+	width: 150px;
+}
+
+.taskprogress {
+	width: 20%;
+	
+}
+
+.taskcat {
+	width: 100px;
+	text-align: center;
+}
+
+.overdueText {
+	width: 150px;
+	text-align: center;
+}
+
+.countdownheader {
+	width: 150px;
+}
+
+.expanded {
+	height: 200px;
+}
